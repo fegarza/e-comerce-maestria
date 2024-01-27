@@ -1,86 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Digital Life</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
+      <img src="https://www.digitalife.com.mx/img/logo.webp" alt="" />
 
+      <div class="menu-in">
+        <img src="" alt="" />
+        <div class="right">
+          <p>Comprar por</p>
+          <b>categorias</b>
+        </div>
+      </div>
+      <div class="menu-in">
+        <img src="" alt="" />
+        <div class="right">
+          <p>Ingresar</p>
+          <b>Codigo postal</b>
+        </div>
+      </div>
+      <div class="busqueda">
+        <input
+          type="text"
+          placeholder="Busca tu producto por nombre, marca, categoría y más"
+        />
+        <button>🔎</button>
+      </div>
+
+      <div class="menu-in"  onclick="location.href = 'https://www.digitalife.com.mx/preguntas-frecuentes';">
+        <img width="30px" src="https://www.digitalife.com.mx/img/icons/faq.svg" alt="" />
+        <div class="right">
+          <p>Obten</p>
+          <b>Ayuda</b>
+        </div>
+      </div>
+      <div class="menu-in" onclick="location.href = 'https://www.digitalife.com.mx/entrar';">
+        <img width="30px" src="https://www.digitalife.com.mx/img/icons/user.svg" alt="" />
+        <div class="right">
+          <p>Bienvenido</p>
+          <b>Ingresar</b>
+        </div>
+      </div>
+      <div class="menu-in" onclick="location.href = 'https://www.digitalife.com.mx/carrito/detalle';">
+        <img width="30px"  src="https://www.digitalife.com.mx/img/icons/shopping-cart.svg" alt="" />
+        <div class="right">
+          <p>Mi</p>
+          <b>Carrito</b>
+        </div>
+      </div>
     </nav>
-    <div class="banner">
+
+    <div class="cont">
+      <div class="main-title">
+        <h1>¡OBTEN LA COMPUTADORA DE TUS SUEÑOS!</h1>
+      </div>
+      <div class="banner">
         <img src="src/pc.png" alt="" />
         <div class="aviso">
-            <h2>NO HACE FALTA SER UN EXPERTO PARA LLEVAR TU EXPERIENCIA A OTRO NIVEL</h2>
-            <h1>¡ARMA TU COMPUTADORA DESDE CERO!</h1>
-            <BUTTON>
-                HAZ CLIC PARA EMPEZAR
-            </BUTTON>
+          <h2>
+            NO HACE FALTA SER UN EXPERTO PARA LLEVAR TU EXPERIENCIA A OTRO NIVEL
+          </h2>
+          <h1>¡ARMA TU COMPUTADORA DESDE CERO!</h1>
+          <button>HAZ CLIC PARA EMPEZAR</button>
         </div>
+      </div>
     </div>
-</body>
+
+    <div class="banner">
+      <div class="aviso">
+        <h2>¿PREFIERES AHORRA TIEMPO?</h2>
+        <h1>CONOCE LOS ENSAMBLES QUE LOS EXPERTOS HAN PREPARADO PARA TI</h1>
+        <button>VER ENSAMBLES</button>
+      </div>
+      <img src="src/pc2.jpg" alt="" />
+    </div>
+
+    <div class="cont">
+      <div class="aviso"><h1>OPINIONES DE NUESTROS CLIENTES</h1></div>
+    </div>
+    <section class="opiniones">
+      <div class="opinion">
+        <img src="src/profile.png" alt="" />
+        <h4>Felipe Garza</h4>
+        <p>
+          "Lo que más me gusta de Digital Life es la comodidad de compra,
+          siempre encuentro lo que quiero"
+        </p>
+      </div>
+      <div class="opinion">
+        <img src="src/profile.png" alt="" />
+        <h4>Jose Antonio</h4>
+        <p>
+          "Garantia de que siempre van a funcionar los componentes sin problema
+          alguno"
+        </p>
+      </div>
+      <div class="opinion">
+        <img src="src/profile.png" alt="" />
+        <h4>Ana Sánchez</h4>
+        <p>"El servicio al cliente es lo mejor, siempre contestan mis dudas"</p>
+      </div>
+      <div class="opinion">
+        <img src="src/profile.png" alt="" />
+        <h4>Jorge Cruz</h4>
+        <p>
+          "El envio es muy rápido y lo mejor es que lo puedo seguir de manera
+          constante"
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
 
- <style>
-    *{
-        font-family: "Open Sans", sans-serif;
-    }
-    nav{
-        height: 40px;
-        background: red;
-    }
-    html, body{
-        width: 100%;
-        height: 100%;
-        margin:0px
-    }
-    .banner{
-        display: flex;
-        width:100%;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        max-height: 1000px;
-        background: linear-gradient( rgb(255, 239, 239), white);
-    }
-    .banner img{
-        width: 500px;
-        padding-top: 80px;
-        margin-left: -60px;
-    }
-    .banner .aviso{
-        display: flex;
-        flex-direction: column;
-        width:600px;
-        text-align: center;
+<style>
+  nav {
+    background: white;
+    height: 60px;
+    border-bottom: 5px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .busqueda {
+    background: #f0f0f0;
+    width: 800px;
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+  }
+  nav input {
+    border: 0px;
+    width: 90%;
+  }
+  nav .busqueda button {
+    width: 40px;
+    height: 100%;
+    background: red;
+    border: 0px;
+    cursor: pointer;
+  }
+  nav .busqueda button:hover{
+    background: rgb(255, 36, 36);
+  }
 
-        align-items: center;
-        justify-content: center;
-    }
-    .banner .aviso h1{
-        color: red;
-        font-size: 40px;
-    }
-    .banner .aviso h2{
-        color: black;
-        font-size: 25px;
-    }
-    .banner .aviso button{
-        background: red;
-        border:0px;
-        color:white;
-        padding: 20px;
-        border-radius: 40px;
-        width: 340px;
-        cursor: pointer;
-        font-weight: bold;
-        font-size: 20px;
-    }
+  nav .menu-in:hover {
+    cursor: pointer;
+    background: rgb(226, 226, 226);
+  }
 
+  nav .menu-in {
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    padding: 5px;
+    min-width: 120px;
+    box-sizing: border-box;
+  }
+  nav .menu-in p {
+    font-size: 12px;
+    padding: 0px;
+    margin: 0px;
+    margin: 0px;
+  }
+  nav .menu-in b {
+    font-size: 14px;
+    color: red;
+    padding: 0px;
+    margin: 0px;
+    margin: 0px;
+  }
 
- </style>
+  .opiniones {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+  }
+  .opinion {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 40px;
+    border: 5px solid red;
+    border-radius: 60px;
+    width: 240px;
+    text-align: center;
+  }
+
+  .opinion h4 {
+    font-size: 26px;
+  }
+  .opinion img {
+    border-radius: 50%;
+  }
+  * {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+  }
+  .cont {
+    background: linear-gradient(rgb(255, 239, 239), white);
+    padding-top: 20px;
+  }
+  .cont h1 {
+    color: red;
+    font-size: 50px;
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+  }
+
+  .banner {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner img {
+    width: 500px;
+    padding-top: 80px;
+  }
+  
+  .banner .aviso {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner .aviso h1 {
+    color: red;
+    font-size: 40px;
+  }
+  .banner .aviso h2 {
+    color: black;
+    font-size: 25px;
+  }
+  .banner .aviso button {
+    background: red;
+    border: 0px;
+    color: white;
+    padding: 20px;
+    border-radius: 40px;
+    width: 240px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+  }
+</style>
